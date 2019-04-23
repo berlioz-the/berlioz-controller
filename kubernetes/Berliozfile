@@ -1,0 +1,9 @@
+---
+kind: service
+cluster: berlioz
+sector: k8s
+name: controller
+
+resources:
+    memory:
+        min: 100

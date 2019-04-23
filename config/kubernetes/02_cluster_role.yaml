@@ -1,0 +1,29 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: berlioz:controller-cluster-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - nodes
+  verbs:
+  - 'get'
+  - 'list'
+  - 'watch'
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - 'get'
+  - 'list'
+  - 'watch'
+- apiGroups:
+  - 'berlioz.cloud'
+  resources:
+  - 'services'
+  verbs:
+  - 'get'
+  - 'list'
+  - 'watch'
