@@ -1,0 +1,4 @@
+Kubernetes --> Controller : Pod Changes
+Kubernetes --> Controller : BerliozService CRD Changes
+Controller -> Controller : process logic
+Controller -> Agent : publish metadata

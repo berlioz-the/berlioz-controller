@@ -1,0 +1,6 @@
+participant ECS
+participant S3
+ECS --> Controller : Task Changes
+S3 --> Controller : BerliozService Changes
+Controller -> Controller : process logic
+Controller -> Agent : publish metadata
